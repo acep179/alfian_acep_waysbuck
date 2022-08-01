@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import Navbar from "./components/navbar";
+import Login from "./components/login";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+      <Login/>
+      <Navbar/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
